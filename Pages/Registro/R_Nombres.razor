@@ -1,0 +1,119 @@
+@page "/Nombre"
+@page "/Nombre/{NombreId:int}"
+
+@inject NombresBLL nombresBLL
+ 
+
+<EditForm Model="nombre" OnValidSubmit="Guardar">
+    <DataAnnotationsValidator />
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Registro de Personas</h3>
+        </div>
+        <div class="card-body">
+          <div class="form-row aling-items-center">
+              <div class="col">
+                  <div class="form-group">
+                      <div class="input-group" style="margin: 22px;">
+                          <span class="input-group-text" style="background-color: #c5c5c550;witdth: 20%"> ID Nombre</span>
+                             <InputNumber @bind-Value="nombre.NombreId" class="form-control col-4"/>
+                                <div class="input-group-append">
+                                    <button type="button" style="z-index: ;0" class="btn btn-primary input-group-text"
+                                     @onclick= "Buscar"><span class="oi oi-
+                                     magnifying-glass"></span></button>
+                                </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+             <div class="form-group">
+                <label>Descripcion</label>
+                <InputText @bind-Value="nombre.Descripcion" class="form-control" />
+                <ValidationMessage For="@(() => nombre.Descripcion)" />
+            </div>
+
+             <div class="form-group">
+                <label>Salario</label>
+                <InputNumber @bind-Value="nombre.Salario" class="form-control" />
+                <ValidationMessage For="@(() => nombre.Salario)" />
+            </div>
+        
+        <div class="card-footer">
+            <div class="form-group text-center" display: inline-block>
+                <button type="button" class="btn btn-lg btn-primary" @onclick="Nuevo">Nuevo</button>
+                <button type="submit" class="btn btn-lg btn-success">Guardar</button>
+                <button type="button" class="btn btn-lg btn-danger" @onclick="Eliminar">Eliminar</button>
+            </div>
+        </div>
+     </div>
+
+    </div>
+</EditForm>
+@code {
+
+    [Parameter]
+    public int NombreId { get; set; }
+    public Nombres nombre { get; set; } = new Nombres();
+
+    protected override void OnInitialized()
+    {
+        if (NombreId >0)
+        Buscar();
+    }
+
+    private void Nuevo()
+    {
+        nombre = new Nombres();
+    }
+
+    private void Buscar()
+    {
+        if (nombre.NombreId > 0)
+        {
+            var encontrado = nombresBLL.Buscar(nombre.NombreId);
+            Nuevo();
+            if (encontrado != null)
+                this.nombre = encontrado;
+            else
+            {
+                {}
+            }
+
+        }
+    }
+
+    public void Guardar()
+    {
+        var guardado = nombresBLL.Guardar(nombre);
+
+        if (guardado)
+        {
+            Nuevo();
+        }
+        else
+        {
+            {}
+        }
+
+    }
+
+    public void Eliminar()
+    {
+        bool eliminado;
+
+        eliminado = nombresBLL.Eliminar(nombre.NombreId);
+
+        if (eliminado)
+        {
+            Nuevo();
+        }
+        else
+        {
+           {}
+        }
+
+    }
+
+}
