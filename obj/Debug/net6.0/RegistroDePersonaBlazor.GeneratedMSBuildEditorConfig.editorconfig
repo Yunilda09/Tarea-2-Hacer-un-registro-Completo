@@ -1,0 +1,64 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RegistroDePersonaBlazor
+build_property.RootNamespace = RegistroDePersonaBlazor
+build_property.ProjectDir = C:\Users\usario\Desktop\Ap\Tarea-2-Hacer-un-registro-Completo\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\usario\Desktop\Ap\Tarea-2-Hacer-un-registro-Completo
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/Pages/Consultas/C_Nombres.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29uc3VsdGFzXENfTm9tYnJlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/Pages/Registro/R_Nombres.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cm9cUl9Ob21icmVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-uxhetylbbb
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-cgv7w3dpc4
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/usario/Desktop/Ap/Tarea-2-Hacer-un-registro-Completo/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
